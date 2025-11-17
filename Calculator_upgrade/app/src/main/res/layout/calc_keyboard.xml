@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calckeyboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    android:rowCount="6"
+    android:padding="8sp"
+    tools:ignore="ExtraText,MissingConstraints">
+    <!--Digits-->
+    <Button
+        android:id="@+id/btn1"
+        android:text="1"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_columnWeight="1"
+        />
+    <Button
+        android:id="@+id/btn2"
+        android:text="2"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_columnWeight="1"
+        />
+    <Button
+        android:id="@+id/btn3"
+        android:text="3"
+        android:layout_columnWeight="1"
+        android:layout_height="56dp"
+        android:layout_width="0dp"
+        />
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_height="56dp"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:text="+"
+
+        />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_height="56dp"
+        android:text="4"
+        />
+    <Button
+        android:id="@+id/btn5"
+        android:layout_height="56dp"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:text="5"
+        />
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_columnWeight="1"
+        android:text="6"
+        />
+    <Button
+        android:id="@+id/btn_minus"
+        android:layout_height="56dp"
+        android:layout_width="0dp"
+        android:text="-"
+        android:layout_columnWeight="1"
+        />
+    <Button
+        android:id="@+id/btn7"
+        android:layout_height="56dp"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:text="7"
+        />
+    <Button
+        android:id="@+id/btn8"
+        android:layout_height="56dp"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:text="8"
+        />
+
+    <Button
+        android:id="@+id/btn9"
+        android:text="9"
+        android:layout_height="56dp"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        />
+    <Button
+        android:id="@+id/btn_mlp"
+        android:text="*"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_columnWeight="1"
+        />
+
+    <Button
+        android:id="@+id/btn0"
+        android:text="0"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_columnWeight="1"
+        android:layout_column="1"
+        />
+    <Button
+        android:id="@+id/btn_dvd"
+        android:text="/"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_column="3"
+        />
+
+    <Button
+        android:id="@+id/btn_eql"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="3"
+        android:text="="
+    />
+    <Button
+        android:id="@+id/btn_clr"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="1"
+        android:text="C"
+        />
+
+</GridLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
