@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#E4E4E7"
+    tools:ignore="ExtraText"
+    android:padding="10dp"
+    android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+            android:text="Shared Bill Tip Calculator"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="top|center_horizontal"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Results"
+            android:textSize="30dp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="#FFFFFF"
+            android:background="#2AA63E"
+            android:padding="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="left|start"
+            tools:ignore="MissingConstraints"
+            />
+        <TextView
+            android:id="@+id/tipAmount"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Tip: £"
+            android:fontFamily="@font/inter_regular"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/ttlAmount"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Total Amount: £"
+            android:textSize="20dp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/theShare"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Share: £"
+            android:textSize="20dp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+        />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#262626"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"/>
+<!--    input fields  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+             <EditText
+                android:id="@+id/billAmount"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Enter Bill Amount"
+                android:textSize="20dp"
+                android:textColorHint="#99A1AF"
+                android:textColor="#343a40"
+                android:inputType="numberDecimal"
+                />
+
+             <EditText
+                android:id="@+id/tipPrcentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:orientation="horizontal"
+                android:hint="Tip %"
+                android:textColorHint="#99A1AF"
+                android:textColor="#343a40"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+
+                 />
+
+             <EditText
+                 android:id="@+id/numberOfPeople"
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:inputType="number"
+                 android:hint="Number of People"
+                 android:textColorHint="#99A1AF"
+                 android:textSize="20dp"
+                 android:textColor="#343a40"
+
+                 />
+        </LinearLayout>
+<!--    Buttons field-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/calcualte_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Calculate"
+                android:backgroundTint="#0D542B"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/inter_medium"
+
+                />
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/inter_medium"
+                android:backgroundTint="#0D542B"
+                android:layout_marginLeft="10dp"
+
+                />
+        </LinearLayout>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
